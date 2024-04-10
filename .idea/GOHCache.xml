@@ -3,6 +3,13 @@
   <component name="GoORMHelperCache">
     <option name="schemaMapping">
       <map>
+        <entry key="FileUtils">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../redo_healer_api/utils/file_utils.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Foo">
           <value>
             <set>
@@ -17,14 +24,26 @@
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712757835012" />
+              <option name="lastModified" value="1712759208505" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/main_test.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712758054072" />
+              <option name="lastModified" value="1712759208510" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../redo_healer_api/utils/file_utils.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1712759171959" />
+              <option name="schema">
+                <list>
+                  <option value="FileUtils" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -32,6 +51,7 @@
     </option>
     <option name="tableStructMapping">
       <map>
+        <entry key="file_utils" value="FileUtils" />
         <entry key="foo" value="Foo" />
       </map>
     </option>
