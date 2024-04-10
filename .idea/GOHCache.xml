@@ -28,24 +28,31 @@
     </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/example/example.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1712784448164" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712760852341" />
+              <option name="lastModified" value="1712777860868" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/main_test.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712760406415" />
+              <option name="lastModified" value="1712784883161" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/../redo_healer_api/service/controller/mediafile_controller.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712759817939" />
+              <option name="lastModified" value="1712774983756" />
               <option name="schema">
                 <list>
                   <option value="MediaFileController" />
@@ -57,7 +64,7 @@
         <entry key="file://$PROJECT_DIR$/../redo_healer_api/utils/file_utils.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712759714880" />
+              <option name="lastModified" value="1712774977009" />
               <option name="schema">
                 <list>
                   <option value="FileUtils" />

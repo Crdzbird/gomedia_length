@@ -47,3 +47,17 @@ func TestIsValidMediaFileWithInvalidPath(t *testing.T) {
 		t.Errorf("Expected file to be invalid, got %v", isValid)
 	}
 }
+
+func TestConversionAudioWithValidInputs(t *testing.T) {
+	result := ConvertMediaFormat("/Users/crdzbird/Desktop/qwerty.mp3", "/Users/crdzbird/Desktop", "converted", "mp3")
+	if result != 1 {
+		t.Errorf("Expected conversion to be successful, got %d", result)
+	}
+}
+
+func TestConversionAudioWithInvalidPath(t *testing.T) {
+	result := ConvertMediaFormat("invalid_path.mp3", "/Users/crdzbird/Desktop", "converted", "mp3")
+	if result == 0 {
+		t.Errorf("Expected conversion to fail with invalid path, got %d", result)
+	}
+}

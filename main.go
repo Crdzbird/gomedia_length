@@ -11,3 +11,7 @@ func GetMediaDuration(path string) float64 {
 func IsValidMediaFile(path string) bool {
 	return C.isValidMediaFile(C.CString(path)) == 1
 }
+
+func ConvertMediaFormat(path, destPath, outputFile, outputFormat string) int {
+	return int(C.convertMediaFormat(C.CString(path), C.CString(destPath), C.CString(outputFile), C.CString(outputFormat)))
+}
