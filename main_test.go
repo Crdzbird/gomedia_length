@@ -1,32 +1,34 @@
 package gomedia_length
 
 import (
+	"fmt"
 	"testing"
 )
 
 func TestGetVideoDurationWithValidPath(t *testing.T) {
-	duration := getVideoDuration("/Users/crdzbird/Desktop/peruano.mp4")
+	duration := GetMediaDuration("/Users/crdzbird/Desktop/peruano.mp4")
 	if duration <= 0 {
 		t.Errorf("Expected duration to be greater than 0, got %f", duration)
 	}
 }
 
 func TestGetVideoDurationWithInvalidPath(t *testing.T) {
-	duration := getVideoDuration("/Users/crdzbird/Desktop/noFile.mp4")
+	duration := GetMediaDuration("/Users/crdzbird/Desktop/noFile.mp4")
 	if duration != 0 {
 		t.Errorf("Expected duration to be 0 for invalid path, got %f", duration)
 	}
 }
 
 func TestGetAudioDurationWithValidPath(t *testing.T) {
-	duration := GetAudioDuration("/Users/crdzbird/Desktop/qwerty.mp3")
+	duration := GetMediaDuration("/Users/crdzbird/Desktop/qwerty.mp3")
+	fmt.Println(duration)
 	if duration <= 0 {
 		t.Errorf("Expected duration to be greater than 0, got %f", duration)
 	}
 }
 
 func TestGetAudioDurationWithInvalidPath(t *testing.T) {
-	duration := GetAudioDuration("/Users/crdzbird/Desktop/noMusic.mp3")
+	duration := GetMediaDuration("/Users/crdzbird/Desktop/noMusic.mp3")
 	if duration != 0 {
 		t.Errorf("Expected duration to be 0 for invalid path, got %f", duration)
 	}

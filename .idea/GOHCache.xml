@@ -17,6 +17,13 @@
             </set>
           </value>
         </entry>
+        <entry key="MediaFileController">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../redo_healer_api/service/controller/mediafile_controller.go" />
+            </set>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="scannedPathMapping">
@@ -24,21 +31,33 @@
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712759208505" />
+              <option name="lastModified" value="1712760852341" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/main_test.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712759208510" />
+              <option name="lastModified" value="1712760406415" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../redo_healer_api/service/controller/mediafile_controller.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1712759817939" />
+              <option name="schema">
+                <list>
+                  <option value="MediaFileController" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/../redo_healer_api/utils/file_utils.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1712759171959" />
+              <option name="lastModified" value="1712759714880" />
               <option name="schema">
                 <list>
                   <option value="FileUtils" />
@@ -53,6 +72,7 @@
       <map>
         <entry key="file_utils" value="FileUtils" />
         <entry key="foo" value="Foo" />
+        <entry key="media_file_controller" value="MediaFileController" />
       </map>
     </option>
     <option name="lastTimeChecked" value="1712756680202" />

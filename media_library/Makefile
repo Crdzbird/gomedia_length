@@ -11,4 +11,4 @@ liblibrary.so:
 
 #	g++ -o liblibrary.so *.cpp  -std=c++20 -O3 -Wall -Wextra -fPIC -shared -lavformat -L/opt/homebrew/Cellar/ffmpeg/7.0-with-options_1/lib/ -I/opt/homebrew/Cellar/ffmpeg/7.0-with-options_1/include
 
-main: liblibrary.so
+main: ../liblibrary.so
