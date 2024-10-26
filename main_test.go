@@ -12,6 +12,20 @@ func TestGetVideoDurationWithValidPath(t *testing.T) {
 	}
 }
 
+func TestThumbnailWithValidPath(t *testing.T) {
+	result := GenerateThumbnail("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop/result.jpeg", 1200, 1200)
+	if result != 1 {
+		t.Errorf("Expected thumbnail to be generated, got %d", result)
+	}
+}
+
+func TestThumbnailWithInvalidPath(t *testing.T) {
+	result := GenerateThumbnail("/Users/crdzbird/Desktop/noFile.mp4", "/Users/crdzbird/Desktop/result.jpeg", 1200, 1200)
+	if result == 0 {
+		t.Errorf("Expected thumbnail to fail with invalid path, got %d", result)
+	}
+}
+
 func TestGetVideoDurationWithInvalidPath(t *testing.T) {
 	duration := GetMediaDuration("/Users/crdzbird/Desktop/noFile.mp4")
 	if duration != 0 {

@@ -1,3 +1,3 @@
 module github.com/crdzbird/gomedia_length
 
-go 1.22.2
+go 1.23.2

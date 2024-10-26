@@ -15,3 +15,6 @@ func IsValidMediaFile(path string) bool {
 func ConvertMediaFormat(path, destPath, outputFile, outputFormat string) int {
 	return int(C.convertMediaFormat(C.CString(path), C.CString(destPath), C.CString(outputFile), C.CString(outputFormat)))
 }
+func GenerateThumbnail(path, destPath string, width, height int) int {
+	return int(C.generateThumbnail(C.CString(path), C.CString(destPath), C.int(width), C.int(height)))
+}
