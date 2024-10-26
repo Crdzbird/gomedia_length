@@ -4,7 +4,14 @@ import "github.com/crdzbird/gomedia_length"
 
 func main() {
 
-	gomedia_length.GenerateThumbnail("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop/result2.jpeg", 1200, 1200)
+	//gomedia_length.GenerateThumbnail("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop", "resultadotem", "jpeg", 1200, 1200)
+
+	var testss = gomedia_length.GenerateThumbnails("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop", 1200, 1200, 10)
+	for _, test := range testss {
+		println(test)
+	}
+	//gomedia_length.ConvertMediaFo
+
 	//gomedia_length.ConvertMediaFormat("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop/", "destination", "mov")
 	//gomedia_length.ConvertMediaFormat("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop/", "destination", "avi")
 	//gomedia_length.ConvertMediaFormat("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop/", "destination", "flv")
