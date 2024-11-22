@@ -1,15 +1,18 @@
 package main
 
-import "github.com/crdzbird/gomedia_length"
+import (
+	"fmt"
+	"github.com/crdzbird/gomedia_length"
+)
 
 func main() {
 
-	//gomedia_length.GenerateThumbnail("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop", "resultadotem", "jpeg", 1200, 1200)
-
-	var testss = gomedia_length.GenerateThumbnails("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop", 1200, 1200, 10)
-	for _, test := range testss {
-		println(test)
-	}
+	temporal := gomedia_length.GenerateThumbnail("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop", "resultadotem", "jpeg", 1200, 1200)
+	fmt.Println(temporal)
+	//var testss = gomedia_length.GenerateThumbnails("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop", 1200, 1200, 10)
+	//for _, test := range testss {
+	//	println(test)
+	//}
 	//gomedia_length.ConvertMediaFo
 
 	//gomedia_length.ConvertMediaFormat("/Users/crdzbird/Desktop/peruano.mp4", "/Users/crdzbird/Desktop/", "destination", "mov")
